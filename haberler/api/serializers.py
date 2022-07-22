@@ -27,4 +27,5 @@ class MakaleSerializer(serializers.Serializer):
         instance.aktif = validated_data.get('aktif', instance.aktif)
         instance.save()
         return instance
+
         
