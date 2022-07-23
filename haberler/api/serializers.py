@@ -8,6 +8,7 @@ class MakaleSerializer(serializers.ModelSerializer):
         class Meta :
             model = Makale
             fields = "__all__"
+            
         
         def get_time_since_publication(self, obj):
             now = datetime.now()
