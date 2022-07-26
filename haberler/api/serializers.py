@@ -12,8 +12,6 @@ class MakaleSerializer(serializers.ModelSerializer):
             model = Makale
             fields = "__all__"
   
-
-
         def get_time_since_publication(self, obj):
             now = datetime.now()
             pub_date = obj.yayımlanma_tarihi
