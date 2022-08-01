@@ -9,6 +9,7 @@ class Gazeteci(models.Model):
         return self.isim + ' ' + self.soyisim
 
     
+    
 class Makale(models.Model):
     yazar = models.ForeignKey(Gazeteci, on_delete=models.CASCADE, related_name='makaleler')
     baslik = models.CharField(max_length=120)
