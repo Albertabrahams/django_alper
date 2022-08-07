@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
-#halil
+def index(request):
+    return render(request, 'haberler/index.html')
 
